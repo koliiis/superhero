@@ -67,7 +67,7 @@ cd root
 
 2. Set up environment variables:
 
-  - Copy .env.example to .env
+  - Copy .env.example(which I sent you) to .env
 
   - Configure database connection and other secrets
 
