@@ -19,8 +19,8 @@ export default function SuperheroPage() {
   const showRightColumn = editingId !== null || selectedId !== null;
 
   return (
-    <div className={`mx-auto px-18 pt-8 text-black space-y-6 md:space-y-0 md:grid md:gap-8 ${
-        showRightColumn ? "md:grid-cols-2" : "md:grid-cols-1"
+    <div className={`mx-auto px-18 pt-12 text-black space-y-6 md:space-y-0 md:grid md:gap-8 ${
+        showRightColumn ? "xl:grid-cols-2" : "xl:grid-cols-1"
       }`}
     >
       <div className="shadow rounded-2xl p-6 bg-neutral-100">

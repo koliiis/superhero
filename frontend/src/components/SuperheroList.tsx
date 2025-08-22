@@ -14,7 +14,7 @@ export default function SuperheroList({ superheroes, onSelect, onEdit, fullWidth
       <h2 className="text-2xl font-bold mb-8 text-center">🦸 Superheroes</h2>
       <div className={`grid gap-6 transition-all duration-500 ${
           fullWidth
-            ? "grid-cols-5"
+            ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5"
             : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
         }`}>
         {superheroes.map((sh) => (

@@ -56,7 +56,7 @@ export default function SuperheroDetail({ id, onClose, onDeleted, onEdit }: Prop
                 key={img.id}
                 src={src}
                 alt={superhero.nickname}
-                className="h-50 object-contain rounded-lg shadow"
+                className="h-60 object-contain rounded-lg shadow"
               />
             )
           })}
