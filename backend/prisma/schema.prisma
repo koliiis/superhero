@@ -1,0 +1,25 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Superhero {
+  id              Int      @id @default(autoincrement())
+  nickname        String
+  real_name       String
+  origin_description String
+  superpowers     String
+  catch_phrase    String
+  images          Image[]
+}
+
+model Image {
+  id          Int    @id @default(autoincrement())
+  url         String
+  superhero   Superhero @relation(fields: [superheroId], references: [id], onDelete: Cascade)
+  superheroId Int
+}
